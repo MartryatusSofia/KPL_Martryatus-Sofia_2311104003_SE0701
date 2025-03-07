@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Input</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        input, button {
+            padding: 10px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Masukkan Nama Anda</h2>
+    <input type="text" id="namaInput" placeholder="Ketik nama di sini">
+    <button onclick="tampilkanNama()">Submit</button>
+
+    <h3 id="outputLabel"></h3>
+
+    <script>
+        function tampilkanNama() {
+            let nama = document.getElementById("namaInput").value;
+            document.getElementById("outputLabel").innerText = "Halo " + nama;
+        }
+    </script>
+
+</body>
+</html>
