@@ -1,17 +1,20 @@
 class SayaTubeVideo {
     constructor(title) {
-        if (!title || title.length > 100) {
-            throw new Error("Judul video tidak boleh kosong dan harus kurang dari 100 karakter.");
+        if (!title || title.length > 200) {
+            throw new Error("Judul video tidak boleh null dan maksimal 200 karakter.");
         }
 
-        this.id = Math.floor(10000 + Math.random() * 90000); 
+        this.id = Math.floor(10000 + Math.random() * 90000);
         this.title = title;
         this.playCount = 0;
     }
 
     increasePlayCount(count) {
-        if (count > 10000000) {
-            throw new Error("Maksimal penambahan play count adalah 10.000.000.");
+        if (typeof count !== "number" || count < 0) {
+            throw new Error("Play count harus berupa bilangan positif.");
+        }
+        if (count > 25000000) {
+            throw new Error("Maksimal penambahan play count adalah 25.000.000.");
         }
 
         try {
@@ -31,4 +34,4 @@ class SayaTubeVideo {
     }
 }
 
-module.exports = SayaTubeVideo; 
+module.exports = SayaTubeVideo;
