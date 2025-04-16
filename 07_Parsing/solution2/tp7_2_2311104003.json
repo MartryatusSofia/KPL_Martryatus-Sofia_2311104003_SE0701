@@ -1,0 +1,33 @@
+{
+	"courses": [
+	  {
+		"code": "CRI2C4",
+		"name": "Konstruksi Perangkat Lunak"
+	  },
+	  {
+		"code": "BDA2A1",
+		"name": "Basis Data"
+	  },
+	  {
+		"code": "RKP3P1",
+		"name": "Rekayasa Kebutuan Perangkat Lunak"
+	  },
+	  {
+		"code": "ADP5L1",
+		"name": "Arsitektur dan Desain Perangkat Lunak"
+	  },
+	  {
+		"code": "PTT3P1",
+		"name": "Proyek Tingkat 2"
+	  },
+	  {
+		"code": "PML2L1",
+		"name": "Pemodelan"
+	  },
+	  {
+		"code": "IMK2I7",
+		"name": "Interaksi Manusia dan Komputer"
+	  }
+	]
+  }
+  

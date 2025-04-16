@@ -1,3 +1,3 @@
-import { martryatus_2311104003 } from './martryatus_2311104003.js';
+import { DataMahasiswa2311104003 } from './DataMahasiswa2311104003.js';
 
-martryatus_2311104003.ReadJSON();
+DataMahasiswa2311104003.ReadJSON();
