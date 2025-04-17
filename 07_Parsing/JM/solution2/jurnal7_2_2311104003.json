@@ -1,0 +1,25 @@
+{
+  "members" : [
+    {
+       "firstName": "Tri",
+       "lastName": "Mylani",
+       "gender": "Perempuan",
+       "age": 21,
+       "nim": "2311104001"
+    },
+    {
+       "firstName": "Martryatus",
+       "lastName": "Sofia",
+       "gender": "Perempuan",
+       "age": 20,
+       "nim": "2311104003"
+    },
+    {
+       "firstName": "Novita",
+       "lastName": "Hapsari",
+       "gender": "Perempuan",
+       "age": 20,
+       "nim": "2311104007"
+    }
+  ]
+}
