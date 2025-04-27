@@ -1,0 +1,82 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+      "title": "Mahasiswa API",
+      "version": "1.0.0",
+      "description": "API untuk mengelola data Mahasiswa"
+    },
+    "paths": {
+      "/api/mahasiswa": {
+        "get": {
+          "summary": "Get semua Mahasiswa",
+          "responses": {
+            "200": {
+              "description": "List Mahasiswa"
+            }
+          }
+        },
+        "post": {
+          "summary": "Tambah Mahasiswa",
+          "requestBody": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Mahasiswa"
+                }
+              }
+            }
+          },
+          "responses": {
+            "201": {
+              "description": "Mahasiswa berhasil ditambahkan"
+            }
+          }
+        }
+      },
+      "/api/mahasiswa/{id}": {
+        "get": {
+          "summary": "Get Mahasiswa by ID",
+          "parameters": [{
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": { "type": "integer" }
+          }],
+          "responses": {
+            "200": { "description": "Mahasiswa ditemukan" },
+            "404": { "description": "Mahasiswa tidak ditemukan" }
+          }
+        },
+        "delete": {
+          "summary": "Hapus Mahasiswa by ID",
+          "parameters": [{
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": { "type": "integer" }
+          }],
+          "responses": {
+            "200": { "description": "Mahasiswa dihapus" },
+            "404": { "description": "Mahasiswa tidak ditemukan" }
+          }
+        }
+      }
+    },
+    "components": {
+      "schemas": {
+        "Mahasiswa": {
+          "type": "object",
+          "properties": {
+            "name": { "type": "string" },
+            "nim": { "type": "string" },
+            "course": {
+              "type": "array",
+              "items": { "type": "string" }
+            },
+            "year": { "type": "integer" }
+          }
+        }
+      }
+    }
+  }
+  
